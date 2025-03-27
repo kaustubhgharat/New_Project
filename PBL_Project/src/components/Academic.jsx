@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import AdminImg from "../assets/adminimg.jpg";
 
-const Patents = () => {
+const Academic = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -89,23 +89,30 @@ const Patents = () => {
               </ul>
             </aside>
 
-       {/* Main Content */}
-       <main className="w-full min-h-screen px-4 md:px-10 lg:pl-64 flex flex-col items-start bg-gray-50 justify-start text-left">
-        <div className="max-w-4xl rounded-lg p-6 md:p-10">
-          <h2 className="text-2xl font-bold text-gray-800 mt-7 mb-4"> Patents</h2>
-          <ul className="text-gray-700 space-y-3">
-          <li><span className="text-blue-500">★</span>Granted Patent on 'System and Method for Motion Analysis and Feedback for Amendment of Human Action.' (Patent No.: 201621029482, Registered on: 30/08/2016)</li>
-          <li><span className="text-blue-500">★</span>Granted Patent 'System and method for automated evaluation of multimodal content.' (Patent No.: 202221060608, Registered on: 11/11/2022 Granted)</li>
-          <li><span className="text-blue-500">★</span>Granted Patent on 'System and method for analysis of human movement and suggestions of amendment if any.' (Patent No.: 2023/05683)</li>
-          <li><span className="text-blue-500">★</span>'Personalized physical activity recommendations system using federated learning (FL) and a method.' (Patent No.: 202321029305, Published on: 15/09/2023)</li>
-          <li><span className="text-blue-500">★</span>'Hydroponic Nutrient Prediction Device using IoT.' (Patent No.: 202321039419, Published on: 18/08/2023)</li>
-          
-          
-          </ul>
+      {/* Main Content */}
+      <main className="w-full min-h-screen px-4 md:px-10 flex flex-col-reverse md:flex-row items-center bg-gray-50 justify-center text-center md:text-left">
+        {/* Text Section */}
+        <div className="max-w-2xl">
+          <h1 className="text-3xl md:text-4xl font-bold text-green-700">Dr. Geetanjali Kale</h1>
+          <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
+            Head & Associate Professor, Dept. of Computer Engineering, PICT,
+            Secretary, ACM India Woman, Senior Member ACM, Senior Member IEEE,
+            Chair ACMW Pune Professional Chap., Former BoS CE SPPU,
+            Core member of AnitaB.org
+          </p>
+          <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700 transition">
+            Contact Me
+          </button>
+        </div>
+
+        {/* Profile Image */}
+        <div className="w-40 h-40 md:w-64 md:h-64 mb-6 md:mb-0">
+          <img src={AdminImg} alt="Profile" className="rounded-full shadow-lg border-4 border-green-500" />
         </div>
       </main>
+
     </div>
   );
 };
 
-export default Patents;
+export default Academic;

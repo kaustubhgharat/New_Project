@@ -6,9 +6,9 @@ import {
   FaProjectDiagram, FaBook, FaFileAlt, FaChalkboardTeacher,
   FaUsers, FaEnvelope
 } from "react-icons/fa";
-import AdminImg from "./assets/adminimg.jpg";
+import AdminImg from "../assets/adminimg.jpg";
 
-const Home = () => {
+const Resources = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -78,9 +78,9 @@ const Home = () => {
           </li>
           <hr />
           <li className="flex items-center space-x-3">
-            <FaUsers />
-            <Link to="/patents" className="hover:text-gray-500">Patents</Link>
-          </li>
+                            <FaUsers />
+                            <Link to="/patents" className="hover:text-gray-500">Patents</Link>
+                          </li>
           <hr />
           <li className="flex items-center space-x-3">
             <FaEnvelope />
@@ -100,9 +100,9 @@ const Home = () => {
             Chair ACMW Pune Professional Chap., Former BoS CE SPPU,
             Core member of AnitaB.org
           </p>
-          <Link to="/contact"><button className="mt-6 bg-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700 transition">
+          <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700 transition">
             Contact Me
-          </button></Link>
+          </button>
         </div>
 
         {/* Profile Image */}
@@ -115,4 +115,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Resources;
